@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>今週の芸能ニュース分析 | 2025年6月第1週</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+</head>
+<body>
+    <header class="hero-section">
+        <div class="container">
+            <h1 class="hero-title">
+                <i class="fas fa-star"></i>
+                今週の芸能ニュース分析
+            </h1>
+            <p class="hero-subtitle">2025年6月第1週 - 特に注目の3つのニュース</p>
+            <div class="date-indicator">
+                <i class="far fa-calendar-alt"></i>
+                <span>2025年6月2日更新</span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- 概要セクション -->
+        <section class="overview-section">
+            <div class="container">
+                <h2 class="section-title">今週のハイライト</h2>
+                <div class="overview-grid">
+                    <div class="overview-card shock">
+                        <div class="card-icon">
+                            <i class="fas fa-wedding-ring"></i>
+                        </div>
+                        <h3>電撃0日婚</h3>
+                        <p>ヒカル × 進撃のノア</p>
+                        <div class="impact-meter">
+                            <div class="meter-fill" style="width: 95%;"></div>
+                        </div>
+                        <span class="impact-label">話題度: 95%</span>
+                    </div>
+                    <div class="overview-card decline">
+                        <div class="card-icon">
+                            <i class="fas fa-chart-line-down"></i>
+                        </div>
+                        <h3>人気凋落</h3>
+                        <p>橋本環奈のTVer危機</p>
+                        <div class="impact-meter">
+                            <div class="meter-fill" style="width: 75%;"></div>
+                        </div>
+                        <span class="impact-label">深刻度: 75%</span>
+                    </div>
+                    <div class="overview-card happy">
+                        <div class="card-icon">
+                            <i class="fas fa-baby"></i>
+                        </div>
+                        <h3>新たな命</h3>
+                        <p>島崎信長が第1子誕生</p>
+                        <div class="impact-meter">
+                            <div class="meter-fill" style="width: 85%;"></div>
+                        </div>
+                        <span class="impact-label">祝福度: 85%</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ニュース詳細分析 -->
+        <section class="news-analysis">
+            <div class="container">
+                <h2 class="section-title">詳細分析</h2>
+                
+                <!-- ニュース1: ヒカル結婚 -->
+                <article class="news-item shock-news">
+                    <div class="news-header">
+                        <div class="news-badge">衝撃</div>
+                        <h3 class="news-title">ヒカル、実業家・進撃のノアと電撃0日婚</h3>
+                        <div class="news-meta">
+                            <span><i class="far fa-clock"></i> 2025年5月31日発表</span>
+                            <span><i class="fas fa-hashtag"></i> 0日婚</span>
+                        </div>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-text">
+                            <p class="lead">YouTuberヒカル（34）が実業家・進撃のノア（30）との結婚を電撃発表。交際期間ゼロ、肉体関係もゼロという前代未聞の「0日婚」として大きな話題となっています。</p>
+                            
+                            <div class="key-facts">
+                                <h4><i class="fas fa-key"></i> キーファクト</h4>
+                                <ul>
+                                    <li><strong>発表方法:</strong> YouTube動画で約8分間の報告</li>
+                                    <li><strong>馴れ初め:</strong> ハワイ旅行での共演がきっかけ</li>
+                                    <li><strong>結婚理由:</strong> 「この人を幸せにしたい」と直感</li>
+                                    <li><strong>進撃のノア:</strong> 元カリスマキャバ嬢、現在は実業家（年商数億円）</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="analysis-box">
+                                <h4><i class="fas fa-chart-bar"></i> 分析ポイント</h4>
+                                <p>この結婚は単なるスピード婚を超えた現象として注目されています。両者とも自身をブランド化し成功を収めた実業家同士の結合は、今後のビジネス展開にも大きな影響を与える可能性があります。</p>
+                            </div>
+                        </div>
+                        <div class="news-stats">
+                            <div class="stat-chart">
+                                <canvas id="hikaruChart" width="300" height="200"></canvas>
+                                <p class="chart-caption">SNS反応分析</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- ニュース2: 橋本環奈 -->
+                <article class="news-item decline-news">
+                    <div class="news-header">
+                        <div class="news-badge">注意</div>
+                        <h3 class="news-title">橋本環奈、TVerランキングで異変 - 人気凋落が鮮明に</h3>
+                        <div class="news-meta">
+                            <span><i class="far fa-clock"></i> 継続中の状況</span>
+                            <span><i class="fas fa-hashtag"></i> パワハラ報道影響</span>
+                        </div>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-text">
+                            <p class="lead">「1000年に1人の逸材」と称された橋本環奈（26）の人気に異変が生じています。現在放送中の主演ドラマ「天久鷹央の推理カルテ」がTVerのお気に入り登録数でトップ10に入らない状況が続いています。</p>
+                            
+                            <div class="key-facts">
+                                <h4><i class="fas fa-key"></i> 現況データ</h4>
+                                <ul>
+                                    <li><strong>朝ドラ「おむすび」:</strong> 史上最低視聴率13.1%を記録</li>
+                                    <li><strong>現在のドラマ:</strong> 「天久鷹央の推理カルテ」視聴率5.86%</li>
+                                    <li><strong>TVerランキング:</strong> お気に入り登録数59.2万人（同時間帯ドラマの半分以下）</li>
+                                    <li><strong>背景:</strong> 2024年10月のパワハラ疑惑報道の影響継続</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="warning-box">
+                                <h4><i class="fas fa-exclamation-triangle"></i> 影響分析</h4>
+                                <p>視聴率低迷は主演者だけの責任ではありませんが、パワハラ報道後の視聴者離れは明確に数字に現れています。今後のキャスティングにも影響を与える可能性があります。</p>
+                            </div>
+                        </div>
+                        <div class="news-stats">
+                            <div class="stat-chart">
+                                <canvas id="hashimotoChart" width="300" height="200"></canvas>
+                                <p class="chart-caption">視聴率推移</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- ニュース3: 島崎信長 -->
+                <article class="news-item happy-news">
+                    <div class="news-header">
+                        <div class="news-badge">祝福</div>
+                        <h3 class="news-title">声優・島崎信長、第1子誕生を報告</h3>
+                        <div class="news-meta">
+                            <span><i class="far fa-clock"></i> 2025年6月1日発表</span>
+                            <span><i class="fas fa-hashtag"></i> 人気声優</span>
+                        </div>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-text">
+                            <p class="lead">人気声優の島崎信長（36）が、第1子の誕生をX（旧Twitter）で報告しました。2023年元旦に結婚を発表してから約2年半での待望の第1子誕生となります。</p>
+                            
+                            <div class="key-facts">
+                                <h4><i class="fas fa-key"></i> プロフィール</h4>
+                                <ul>
+                                    <li><strong>代表作:</strong> 「呪術廻戦」真人役、「Free!」七瀬遙役</li>
+                                    <li><strong>所属:</strong> 青二プロダクション</li>
+                                    <li><strong>出身:</strong> 宮城県（36歳）</li>
+                                    <li><strong>結婚:</strong> 2023年1月1日に一般女性との結婚を発表</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="celebration-box">
+                                <h4><i class="fas fa-heart"></i> ファンの反応</h4>
+                                <p>声優仲間からも多数の祝福コメントが寄せられており、緒方恵美さんや三田誠さん、原作者の方々からも温かいメッセージが届いています。今後も全力で演技に取り組むと意気込みを語っています。</p>
+                            </div>
+                        </div>
+                        <div class="news-stats">
+                            <div class="stat-chart">
+                                <canvas id="shimazakiChart" width="300" height="200"></canvas>
+                                <p class="chart-caption">出演作品ジャンル分布</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- 週間トレンド分析 -->
+        <section class="trend-analysis">
+            <div class="container">
+                <h2 class="section-title">週間トレンド分析</h2>
+                <div class="trend-grid">
+                    <div class="trend-card">
+                        <h3><i class="fas fa-trending-up"></i> 話題のキーワード</h3>
+                        <div class="keyword-cloud">
+                            <span class="keyword big">0日婚</span>
+                            <span class="keyword medium">電撃結婚</span>
+                            <span class="keyword small">進撃のノア</span>
+                            <span class="keyword medium">視聴率低迷</span>
+                            <span class="keyword small">パワハラ報道</span>
+                            <span class="keyword medium">第1子誕生</span>
+                            <span class="keyword small">声優業界</span>
+                        </div>
+                    </div>
+                    <div class="trend-card">
+                        <h3><i class="fas fa-chart-pie"></i> ニュースカテゴリ分布</h3>
+                        <canvas id="categoryChart" width="300" height="200"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 週刊芸能ニュース分析 | データは公開情報を基に独自分析</p>
+            <p class="disclaimer">※分析内容は報道を基にした独自の見解であり、事実と異なる場合があります</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
